@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Your Name</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!--This header is unfinished.
+      It needs a div (of aqua color) behind the name, and the links needs to be set to the
+      rightmost part of the page with lines in between them.-->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:white">
+      <div class="row">
+        <div class="col-1">
+          <a class="navbar-brand" href="index.html">Your Name</a>
+        </div>
+        <div class="col-3"></div>
+        <div class="col">
+          <a class="nav-link" href="index.html" style="color: darkslategrey;">About</a>
+        </div>
+        <div class="col">
+          <a class="nav-link" href="portfolio.html" style="color: darkslategrey;">Portfolio</a>
+        </div>
+        <div class="col">
+          <a class="nav-link" href="contact.html" style="color: darkslategrey;">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!--This part also needs to be separated into rows and columns like the header.
+      But, there are eight rows with one column each for each element in the container.
+    -->
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+  </div>
+
+  <!--This needed to be a sticky footer. I am not sure how to do it, but I know it
+      involves .wrapper somehow.-->
+  <footer>
+    <div class="container">
+      Copyright &copy; 
+    </div>
+  </footer>
+</body>
+
+</html>
